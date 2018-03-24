@@ -7,9 +7,10 @@ import (
 
 func main() {
 	s := []int{3, 5, 7, 1, 4, 2}
+	//Обычная сортировка (по возрастанию)
 	sort.Ints(s)
 	fmt.Println(s)
-
+	//Указываем направление сортировки (по убыванию)
 	sort.Slice(s, func(i, j int) bool {
 		return s[i] > s[j]
 	})
