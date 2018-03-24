@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"sort"
-
 )
 
 func main() {
@@ -11,8 +10,8 @@ func main() {
 	sort.Ints(s)
 	fmt.Println(s)
 
-	sort.Slice(s, func (i, j int) bool {
+	sort.Slice(s, func(i, j int) bool {
 		return s[i] > s[j]
 	})
 	fmt.Println(s)
-	}
+}
